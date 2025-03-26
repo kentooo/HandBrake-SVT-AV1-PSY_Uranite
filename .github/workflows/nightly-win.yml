@@ -7,9 +7,9 @@ on:
   workflow_dispatch:
 
 env:
-  TOOLCHAIN_VERSION: "20250114"
-  TOOLCHAIN_SHA: "7db6b9c2944b0f0cc2f71e2a415873709e027f9b"
-  TOOLCHAIN_FILE: "llvm-mingw-20250114-msvcrt-ubuntu-20.04-x86_64.tar.xz"
+  TOOLCHAIN_VERSION: "20250319"
+  TOOLCHAIN_SHA: "3a9b127c62220c7bf4beec1638d5608d350dc452"
+  TOOLCHAIN_FILE: "llvm-mingw-20250319-msvcrt-ubuntu-20.04-x86_64.tar.xz"
 
 jobs:
   build_mingw_arm:
