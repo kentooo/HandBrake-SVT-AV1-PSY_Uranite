@@ -93,6 +93,11 @@ setup_compiler() {
   export STRIP="/usr/bin/llvm-strip"
 }
 
+prepare() {
+  wget -O /tmp/cmake.pkg.tar.zst "https://archive.archlinux.org/packages/c/cmake/cmake-3.31.6-1-x86_64.pkg.tar.zst"
+  sudo pacman -U --noconfirm /tmp/cmake.pkg.tar.zst
+}
+
 build() {
   ./HandBrake-SVT-AV1-PSY/patch.sh
   setup_compiler
