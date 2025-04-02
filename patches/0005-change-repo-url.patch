@@ -1,5 +1,5 @@
 diff --git a/contrib/svt-av1/module.defs b/contrib/svt-av1/module.defs
-index 3538e1a9b..e23bebed8 100644
+index 3538e1a9b..1d95cce25 100644
 --- a/contrib/svt-av1/module.defs
 +++ b/contrib/svt-av1/module.defs
 @@ -3,9 +3,8 @@ __deps__ := CPUINFO
@@ -9,8 +9,8 @@ index 3538e1a9b..e23bebed8 100644
 -SVT-AV1.FETCH.url     = https://github.com/HandBrake/HandBrake-contribs/releases/download/contribs2/SVT-AV1-v3.0.2.tar.gz
 -SVT-AV1.FETCH.url    += https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v3.0.2/SVT-AV1-v3.0.2.tar.gz
 -SVT-AV1.FETCH.sha256  = 5af7f4376aa00a4dee32df04be1cdd1983c9940bcc019ee6b29bb8a216bae2f8
-+SVT-AV1.FETCH.url     = https://github.com/Uranite/HandBrake-SVT-AV1-PSY/releases/download/contribs/svt-av1-psy-testing_3.0.0_git.tar.gz
-+SVT-AV1.FETCH.sha256  = 7f994f47ae8c91e0142f75bf82f0683e93578c295adb2002b436ee3604073d32
++SVT-AV1.FETCH.url     = https://github.com/Uranite/HandBrake-SVT-AV1-PSY/releases/download/contribs/svt-av1-psy-testing.tar.gz
++SVT-AV1.FETCH.sha256  = 0fd89dcf66bfeb3c1f49b6ad15c95fb02876dc8ae109cdc01cb2c8b208218b0d
  
  SVT-AV1.GCC.args.c_std =
  
