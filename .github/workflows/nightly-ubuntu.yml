@@ -26,6 +26,7 @@ jobs:
     - name: Setup Environment
       run: |
         sudo apt-get update
+        sudo apt-get install cmake=3.28.3-1build7
         sudo apt-get install \
             autoconf automake build-essential libass-dev libbz2-dev libfontconfig1-dev \
             libfreetype6-dev libfribidi-dev libharfbuzz-dev libjansson-dev liblzma-dev \
@@ -34,6 +35,12 @@ jobs:
             libx264-dev libxml2-dev libvpx-dev make nasm ninja-build patch tar zlib1g-dev \
             appstream gettext libglib2.0-dev libgtk-4-dev python3-mesonpy libva-dev \
             libdrm-dev
+
+    - name: Setup CMake
+      run: |
+        sudo ln -sf /usr/bin/cmake /usr/local/bin/cmake
+        which cmake
+        cmake --version
 
     - name: Setup Cargo-C Toolchain
       if: steps.linux-cargo-c-toolchain.outputs.cache-hit != 'true'
