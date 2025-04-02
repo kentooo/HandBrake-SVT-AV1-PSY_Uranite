@@ -1,6 +1,7 @@
 name: Windows Build
 
 on:
+  pull_request:
   schedule:
     - cron:  '30 7 * * 1,5'
   
